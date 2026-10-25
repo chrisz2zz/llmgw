@@ -1,0 +1,14 @@
+# llmgw 网关配置模板
+# 使用方式：复制本文件为 config.toml，并填入真实值。
+# config.toml 已被 .gitignore 忽略，请勿提交真实密钥。
+
+[server]
+addr = ":8080"            # HTTP 监听地址
+
+[log]
+level = "info"            # 日志级别：debug / info / warn / error
+
+[openai]
+base_url = "https://api.deepseek.com/v1"   # OpenAI 兼容供应商地址
+api_key = "your-api-key-here"              # 供应商 API Key（替换为真实值）
+timeout = "30s"                             # 上游请求超时
